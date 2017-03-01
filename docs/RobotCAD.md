@@ -58,21 +58,14 @@ requires me to re-color the graphic once it’s in Unity.
 Create a new Unity project
 --------------------------
 
-1.  Create a new Unity project and make all of the appropriate HoloLens project
-    setting adjustments. See
-    <https://developer.microsoft.com/en-us/windows/holographic/unity_development_overview>
-    for details.
+Create a new Unity project and make all of the appropriate HoloLens project setting adjustments. See <https://developer.microsoft.com/en-us/windows/holographic/unity_development_overview> for details.
 
 -   You can also get all the correct settings using the Configure options under
     **HoloToolKit** on the top menu:
 
    ![](./media/e18b4a71a57766464de41480ace4db04.png)
 
-2.  Import the HoloToolkit into the Unity project. Right click on the Assets
-    folder, select Import Package, Custom Package. Select the
-    “HoloToolkit-Unity-v1.5.5.0.unitypackage.” This is the current version as of
-    2/24/17 and is the basis for the notes below. I unchecked the Example
-    projects so they weren’t imported.
+Import the HoloToolkit into the Unity project. Right click on the Assets folder, select Import Package, Custom Package. Select the “HoloToolkit-Unity-v1.5.5.0.unitypackage.” This is the current version as of 2/24/17 and is the basis for the notes below. I unchecked the Example projects so they weren’t imported.
 
 >   See: <https://github.com/Microsoft/HoloToolkit-Unity> and the getting
 >   started guide here:
@@ -142,8 +135,7 @@ Add the Robot to your scene and setup TapToPlace:
 Build Settings:
 ---------------
 
-Note that steps 16 & 17 should be set if you used the Configure Options from the
-HoloToolKit top menu as mentioned above.
+Note that the next two steps should be set already if you used the Configure Options from the HoloToolKit top menu as mentioned above.
 
 16.  Open File, Build Settings and click the “Windows Store” tab. Click the
     Player Settings button at the bottom of the screen. In the Inspector, find
