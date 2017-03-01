@@ -66,7 +66,7 @@ Create a new Unity project
 -   You can also get all the correct settings using the Configure options under
     **HoloToolKit** on the top menu:
 
-    ![](media/e18b4a71a57766464de41480ace4db04.png)
+-   [./media/image1.png](./media/image1.png)
 
 1.  Import the HoloToolkit into the Unity project. Right click on the Assets
     folder, select Import Package, Custom Package. Select the
@@ -107,7 +107,7 @@ Add the Robot to your scene and setup TapToPlace:
 5.  Adjust the scale size of the Robot 3D model object. I started with scale
     setting of (.01, .01, .01) and then made adjustments later.
 
--   [./media/image2.png](./media/image2.png)
+>   [./media/image2.png](./media/image2.png)
 
 1.  Add a 3D box collider as a **component** of RobotBase.
 
@@ -145,15 +145,12 @@ Build Settings:
 Note that steps 16 & 17 should be set if you used the Configure Options from the
 HoloToolKit top menu as mentioned above.
 
-1.  Open File, Build Settings and click the “Windows Store” tab (
+1.  Open File, Build Settings and click the “Windows Store” tab. Click the
+    Player Settings button at the bottom of the screen. In the Inspector, find
+    the “Publish Settings” and enable the “**InternetClient”** and
+    “**SpatialPerception”** capabilities.
 
-    ![](media/c412f11704830ce2dde14f5f0054426d.png)
-
-    ). Click the Player Settings button at the bottom of the screen. In the
-    Inspector, find the “Publish Settings” and enable the “**InternetClient”**
-    and “**SpatialPerception”** capabilities.
-
--   [./media/image4.png](./media/image4.png)
+-   [./media/image3.png](./media/image3.png)
 
     ![](media/ab3fc04e2a3e677f367bad137e769017.png)
 
@@ -161,24 +158,24 @@ HoloToolKit top menu as mentioned above.
     Reality Supported**” feature is checked and “**Windows Holographic**” is
     listed.
 
--   [./media/image6.png](./media/image6.png)
+>   [./media/image5.png](./media/image5.png)
 
 1.  In the Build settings, Click the “Add Open Scenes” Button to add your scene
     to the build, verify the Windows Store settings, and click Build.
 
--   [./media/image7.png](./media/image7.png)
+    ![C:\\Users\\James\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\ac560cfebb210f8c380f523eaa0181d0.png](media/ac560cfebb210f8c380f523eaa0181d0.png)
 
-1.  This will prompt for a build folder. Create a new folder if necessary and
+2.  This will prompt for a build folder. Create a new folder if necessary and
     select the folder to continue.
 
-2.  Once complete open the build folder you specified and open the
+3.  Once complete open the build folder you specified and open the
     projectname.sln file in Visual Studio. Using the top toolbar in Visual
     Studio, change the target from Debug to Release and from ARM to X86. Click
     on the arrow next to the Device button, and select Device for your Hololens
     connected to a USB port (be sure it’s on), or select the HoloLens Emulator
     if you don’t have the device available.
 
-3.  Click Debug -\> Start Without debugging or press Ctrl + F5 to build and
+4.  Click Debug -\> Start Without debugging or press Ctrl + F5 to build and
     deploy the project.
 
 Further adjustments would be to add colors and textures to the components of the
