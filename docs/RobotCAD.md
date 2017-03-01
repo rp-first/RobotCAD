@@ -166,17 +166,17 @@ HoloToolKit top menu as mentioned above.
     ![](./media/ac560cfebb210f8c380f523eaa0181d0.png)
 
 19.  This will prompt for a build folder. Create a new folder if necessary and
-    select the folder to continue.
+     select the folder to continue.
 
 20.  Once complete open the build folder you specified and open the
-    projectname.sln file in Visual Studio. Using the top toolbar in Visual
-    Studio, change the target from Debug to Release and from ARM to X86. Click
-    on the arrow next to the Device button, and select Device for your Hololens
-    connected to a USB port (be sure it’s on), or select the HoloLens Emulator
-    if you don’t have the device available.
+     projectname.sln file in Visual Studio. Using the top toolbar in Visual
+     Studio, change the target from Debug to Release and from ARM to X86. Click
+     on the arrow next to the Device button, and select Device for your Hololens
+     connected to a USB port (be sure it’s on), or select the HoloLens Emulator
+     if you don’t have the device available.
 
 21.  Click Debug -\> Start Without debugging or press Ctrl + F5 to build and
-    deploy the project.
+     deploy the project.
 
 Further adjustments would be to add colors and textures to the components of the
 3D Robot model, add other objects into the scene (like game objects, etc.), and
