@@ -150,9 +150,9 @@ HoloToolKit top menu as mentioned above.
     the “Publish Settings” and enable the “**InternetClient”** and
     “**SpatialPerception”** capabilities.
 
--   [./media/1d6effb1bf98d13c0faa62471eea7ac7.png]
+>   [./media/1d6effb1bf98d13c0faa62471eea7ac7.png]
 
--   [./media/ab3fc04e2a3e677f367bad137e769017.png]
+>   [./media/ab3fc04e2a3e677f367bad137e769017.png]
 
 17.  Also, under Other Settings, Rendering Settings, verify that the “**Virtual
     Reality Supported**” feature is checked and “**Windows Holographic**” is
@@ -163,7 +163,7 @@ HoloToolKit top menu as mentioned above.
 18.  In the Build settings, Click the “Add Open Scenes” Button to add your scene
     to the build, verify the Windows Store settings, and click Build.
 
-    ![C:\\Users\\James\\AppData\\Local\\Microsoft\\Windows\\INetCache\\Content.Word\\ac560cfebb210f8c380f523eaa0181d0.png](media/ac560cfebb210f8c380f523eaa0181d0.png)
+>    [./media/ac560cfebb210f8c380f523eaa0181d0.png]
 
 19.  This will prompt for a build folder. Create a new folder if necessary and
     select the folder to continue.
