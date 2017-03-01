@@ -20,8 +20,8 @@ Process summary:
 
 6.  Build and deploy to the Hololens.
 
-Prepare the CAD file. 
-----------------------
+Prepare the CAD file.
+---------------------
 
 There are likely several ways to go about this depending on what CAD application
 you use and what export formats it supports. I basically wanted to get it to an
@@ -63,12 +63,12 @@ Create a new Unity project
     <https://developer.microsoft.com/en-us/windows/holographic/unity_development_overview>
     for details.
 
-    You can also get all the correct settings using the Configure options under
+-   You can also get all the correct settings using the Configure options under
     **HoloToolKit** on the top menu:
 
-    ![image](media/d50e1ceef80aa64b57c045b9b8b1b6c3.png)
+    ![](media/e18b4a71a57766464de41480ace4db04.png)
 
-2.  Import the HoloToolkit into the Unity project. Right click on the Assets
+1.  Import the HoloToolkit into the Unity project. Right click on the Assets
     folder, select Import Package, Custom Package. Select the
     “HoloToolkit-Unity-v1.5.5.0.unitypackage.” This is the current version as of
     2/24/17 and is the basis for the notes below. I unchecked the Example
@@ -107,9 +107,9 @@ Add the Robot to your scene and setup TapToPlace:
 5.  Adjust the scale size of the Robot 3D model object. I started with scale
     setting of (.01, .01, .01) and then made adjustments later.
 
-    ![](media/574cf46e9b3e2cc3f3ae3dfdccf44ad2.png)
+-   [./media/image2.png](./media/image2.png)
 
-6.  Add a 3D box collider as a **component** of RobotBase.
+1.  Add a 3D box collider as a **component** of RobotBase.
 
     1.  Click the Add Component Button, select Physics, select Box Collider.
 
@@ -117,67 +117,68 @@ Add the Robot to your scene and setup TapToPlace:
         all dimensions. Be sure to include the Robot model’s origin inside the
         3D box collider area.
 
-7.  Add a Cursor prefab from HTK to the **root** of your scene hierarchy. I used
+2.  Add a Cursor prefab from HTK to the **root** of your scene hierarchy. I used
     the “DefaultCursor”.
 
-8.  Create another empty game object in the root of your screen hierarchy and
+3.  Create another empty game object in the root of your screen hierarchy and
     name it Managers or something else meaningful for you.
 
-9.  Add the WorldAnchorManager script from HTK as **component** of Managers
+4.  Add the WorldAnchorManager script from HTK as **component** of Managers
 
-10. Add the GazeManager script from HTK as **component** of Managers
+5.  Add the GazeManager script from HTK as **component** of Managers
 
-11. Add the GestureInput script from HTK as **component** of Managers
+6.  Add the GestureInput script from HTK as **component** of Managers
 
-12. Add the RawInteractionSourcesInput script from HTK as **component** of
+7.  Add the RawInteractionSourcesInput script from HTK as **component** of
     Managers
 
-13. Add the InputManager script from HTK as **component** of Managers
+8.  Add the InputManager script from HTK as **component** of Managers
 
-14. Add the SpatialMapping prefab from HTK to **root** of the hierarchy. Turn
+9.  Add the SpatialMapping prefab from HTK to **root** of the hierarchy. Turn
     off the “Draw Visual Meshes checkbox”.
 
-15. Add TapToPlace script as **component** to RobotBase.
+10. Add TapToPlace script as **component** to RobotBase.
 
 Build Settings:
 ---------------
 
-![](media/c412f11704830ce2dde14f5f0054426d.png)
-
 Note that steps 16 & 17 should be set if you used the Configure Options from the
 HoloToolKit top menu as mentioned above.
 
-1.  Open File, Build Settings and click the “Windows Store” tab ( ). Click the
-    Player Settings button at the bottom of the screen. In the Inspector, find
-    the “Publish Settings” and enable the “**InternetClient”** and
-    “**SpatialPerception”** capabilities.
+1.  Open File, Build Settings and click the “Windows Store” tab (
 
-    ![](media/1d6effb1bf98d13c0faa62471eea7ac7.png)
+    ![](media/c412f11704830ce2dde14f5f0054426d.png)
+
+    ). Click the Player Settings button at the bottom of the screen. In the
+    Inspector, find the “Publish Settings” and enable the “**InternetClient”**
+    and “**SpatialPerception”** capabilities.
+
+-   [./media/image4.png](./media/image4.png)
 
     ![](media/ab3fc04e2a3e677f367bad137e769017.png)
 
-2.  Also, under Other Settings, Rendering Settings, verify that the “**Virtual
+1.  Also, under Other Settings, Rendering Settings, verify that the “**Virtual
     Reality Supported**” feature is checked and “**Windows Holographic**” is
     listed.
 
-    ![](media/969f75ceb75fec0b687424d679ba59b2.png)
+-   [./media/image6.png](./media/image6.png)
 
-3.  In the Build settings, Click the “Add Open Scenes” Button to add your scene
+1.  In the Build settings, Click the “Add Open Scenes” Button to add your scene
     to the build, verify the Windows Store settings, and click Build.
 
-    ![](media/ac560cfebb210f8c380f523eaa0181d0.png)
+-   [./media/image7.png](./media/image7.png)
 
-4.  This will prompt for a build folder. Create a new folder if necessary and
+1.  This will prompt for a build folder. Create a new folder if necessary and
     select the folder to continue.
 
-5.  Once complete open the build folder you specified and open the
+2.  Once complete open the build folder you specified and open the
     projectname.sln file in Visual Studio. Using the top toolbar in Visual
     Studio, change the target from Debug to Release and from ARM to X86. Click
     on the arrow next to the Device button, and select Device for your Hololens
     connected to a USB port (be sure it’s on), or select the HoloLens Emulator
     if you don’t have the device available.
 
-6.  Click Debug -\> Start Without debugging or press Ctrl + F5 to build and
+3.  Click Debug -\> Start Without debugging or press Ctrl + F5 to build and
     deploy the project.
 
 Further adjustments would be to add colors and textures to the components of the
