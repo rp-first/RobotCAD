@@ -155,7 +155,7 @@ Note that the next two steps should be set already if you used the Configure Opt
 18.  In the Build settings, Click the “Add Open Scenes” Button to add your scene
     to the build, verify the Windows Store settings, and click Build.
 
-    ![](./media/ac560cfebb210f8c380f523eaa0181d0.png)
+   ![](./media/ac560cfebb210f8c380f523eaa0181d0.png)
 
 19.  This will prompt for a build folder. Create a new folder if necessary and
      select the folder to continue.
